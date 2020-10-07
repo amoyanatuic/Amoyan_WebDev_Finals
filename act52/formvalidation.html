@@ -1,1 +1,135 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Registration Form</title>
+</head>
+<body>
+  <!--
+  <table border="1">
+    <tr>
+      <td><em>Row1</em> Col1</td>
+      <td>Row1 Col2</td>
+    </tr>
+    <tr>
+      <td>Row2 Col1</td>
+      <td>Row2 Col2</td>
+    </tr>    
+  </table>
+  -->
+  
+      <legend> <h1> The Rice Mart</h1>
+        <legend> <h1>Online Registration Form</h1>
+      <p> The Rice Mart online application form asks the client's basic information<br>
+        such as name, email address, password, gender, birthday, placed order, mode of payment.</br></p> </legend>
+      <table>
+      <form id="myForm" action="">
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" 
+                     id="userName" 
+                     name="userName"/>
+          </td>
+        </tr>
+        <tr>
+          <td>Email Address:</td>
+          <td><input type="email" id="emailAddress" name="emailAddress" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" id="txtPassword" name="txtPassword" /></td>
+        </tr>
+       <tr>
+          <td>Gender:</td>
+          <td>  <input type="radio" id="gender" name="gender" value="Female" selected="selected"/>
+          		<label for="gender">Female</label>
+          		<input type="radio" id="gender" name="gender" value="Male" selected="selected"/>
+          		<label for="gender">Male</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Birth Date:</td>
+          <td>  
+          <input type="date" id="birthday" name="birthday">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Choose the best rice: 
+            <select name="drpChoices" id="drpChoices">
+              <option value=""></option>
+              <option value="Tonner">Tonner</option>
+              <option value="Jasmine">Jasmine</option>
+              <option value="Brown Rice">Brown Rice</option>
+              <option value="Dinorado">Dinorado</option>
+              <option value="Sinandomeng">Vocals</option>
+            </select>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+          Pick Orders:<br>
+            <input type="checkbox" 
+                   id="d1"
+                   name="d1"
+                   value="1kg"/>
+                   
+            <label for="d1">1kg</label>
+            <br>
+            <input type="checkbox" 
+                   id="d2"
+                   name="d2"
+                   value="2kg"/>
+            <label for="d2">2kg</label>
+            <br>
+            <input type="checkbox" 
+                   id="d3"
+                   name="d3"
+                   value="5kg"/>
+            <label for="d3">5kg</label>
+            <br>
+            <input type="checkbox" 
+                   id="d4"
+                   name="d4"
+                   value="10kg"/>
+            <label for="d4">10kg</label>
+            <br>
+            <input type="checkbox" 
+                   id="d5"
+                   name="d5"
+                   value="25kg / Half Sack"/>
+            <label for="d5">25kg / Half Sack</label>
+            <br>
+            <input type="checkbox" 
+                   id="d6"
+                   name="d6"
+                   value="50kg / 1 Sack"/>
+            <label for="d6">50kg /1 Sack</label>
+            <br>
+            <input type="checkbox" 
+                   id="d7"
+                   name="d7"
+                   value="Volume"/>
+            <label for="d7">Volume</label>
+            <label for="appt">
+            <br>
+            Pick up/Delivery time:</label>
+  <input type="time" id="appt" name="appt">
+          </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <input type="submit"> <input type="reset">
+        </td>
+        </tr>
+       
+        </form> 
+      </table>
+
+  
+</body>
+</html>
