@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <title>Insta Clone </title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light sticky-top bg-light" style="border-bottom: 1px solid #ddd;">
+    <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" width="150px"></a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <ul class="nav ">
+      <li class="nav-item">
+        <i class="fas fa-home fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-compass fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-heart fa-2x"></i>&nbsp;&nbsp;&nbsp;
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6" class="icon3"></a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Log Out</a>
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- Modal Begin -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body ">
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+          
+          <!--<input class="form-control mr-sm-2 custom-search-modal" type="search" placeholder="" aria-label="Search">-->
+          <i class="fas fa-camera-retro p-1 border rounded mt-1"></i>
+          <i class="fas fa-map-marker-alt p-1 border rounded mt-1"></i>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success btn-sm">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- modal end -->
+
+  <div class="container"><br>
+    
+    <!-- Nav pills -->
+    <ul class="nav nav-pills mr-auto p-2" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#home"><i class="fa fa-square" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu2"><i class="fa fa-th" aria-hidden="true"></i></a>
+      </li>
+
+      <button type="button" class="btn btn-primary ml-auto p-2" data-toggle="modal" data-target="#exampleModal">Create a new post</button>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <div class="row justify-content-center">
+          <div class="">
+
+            <div class="card mx-auto custom-card" id="prova">
+              <div class="row post-header col-12 py-2 px-3">
+                <div class="col-6 float-left ">
+                  <h4><img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6" class="icon">iamarchieryan</h4>
+                </div>
+                <div class="col-6 float-right text-right post-number">
+                  <h4><a href="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6">...</a></h4>
+                </div>
+              </div>
+              <img class="card-img" src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/29468247_2225398440805762_3123870597898043392_o.jpg?_nc_cat=102&_nc_sid=84a396&_nc_ohc=G_Ku5s7BEuMAX8OIW_6&_nc_ht=scontent.fcgy1-1.fna&oh=c4e177f89c81938916100a6c5b74e9ee&oe=5FA5CD39" alt="Card image cap">
+              <div class="card-body px-3">
+                <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                <h6 class="card-subtitle"><img src="https://instagram.fcgy1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/12912788_1733197366895741_1964914525_a.jpg?_nc_ht=instagram.fcgy1-1.fna.fbcdn.net&_nc_ohc=yBv-0i897EcAX_eRQ2y&oh=8f2b719c34d71b4bd7b5ec394536ac2a&oe=5FAC2407" class="icon2">Liked by <b>marjoangelloja and <b>20 others</b></h6>
+                <p class="card-text"><b>iamarchieryan</b> "View of the night 📸."</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card mx-auto custom-card" id="prova">
+              <div class="row post-header col-12 py-2 px-3">
+                <div class="col-6 float-left ">
+                  <h4><img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6" class="icon">iamarchieryan</h4>
+                </div>
+                <div class="col-6 float-right text-right post-number">
+                  <h4><a href="#">...</a></h4>
+                </div>
+              </div>
+              <img class="card-img" src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/13728974_1383454365000178_8380962556661192722_n.jpg?_nc_cat=108&_nc_sid=a9b1d2&_nc_aid=0&_nc_ohc=5VsN9KF-18gAX8snEDR&_nc_ht=scontent.fcgy1-1.fna&oh=99172f34527bf3f52148f293f3b568e8&oe=5FA96BBB">
+              <div class="card-body px-3">
+                <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                <h6 class="card-subtitle"><img src="https://instagram.fcgy1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/82296990_3019716968072380_6636237592062853120_n.jpg?_nc_ht=instagram.fcgy1-1.fna.fbcdn.net&_nc_ohc=wZ8n_FpLJY8AX9Cu278&oh=5641dbd2c70cd36ce3c4f9f86df43a7b&oe=5FAACE5A" class="icon2">Liked by <b>honeymcsndl21 and <b> 7 others</b></h6>
+                <p class="card-text"><b>iamarchieryan</b> <a href="#"></a></p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                </ul>
+              </div>
+            </div>
+
+                        <div class="card mx-auto custom-card" id="prova">
+              <div class="row post-header col-12 py-2 px-3">
+                <div class="col-6 float-left ">
+                  <h4><img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6" class="icon">iamarchieryan</h4>
+                </div>
+                <div class="col-6 float-right text-right post-number">
+                  <h4><a href="#">...</a></h4>
+                </div>
+              </div>
+              <img class="card-img" src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/103914342_3792111807467743_7532403016987990032_n.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=c-Ypos8tqYYAX_NHng7&_nc_ht=scontent.fcgy1-1.fna&oh=a378ca769124d2dba6fa4822e92c11ec&oe=5FA672A7">
+              <div class="card-body px-3">
+                <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                <h6 class="card-subtitle"><img src="https://instagram.fcgy1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/55886234_2213155589014448_5684647506999246848_n.jpg?_nc_ht=instagram.fcgy1-1.fna.fbcdn.net&_nc_ohc=QIJEC15hxuYAX91T_yg&oh=b460e6d035d93c63e256d2284f03d556&oe=5FAB457A" class="icon2">Liked by <b>mjolvds and <b> 3 others</b></h6>
+                <p class="card-text"><b>iamarchieryan</b> Blue Tander Team MSI ECS League of Champions</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                </ul>
+              </div>
+            </div>
+            
+                        <div class="card mx-auto custom-card" id="prova">
+              <div class="row post-header col-12 py-2 px-3">
+                <div class="col-6 float-left ">
+                  <h4><img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6" class="icon">iamarchieryan</h4>
+                </div>
+                <div class="col-6 float-right text-right post-number">
+                  <h4><a href="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6">...</a></h4>
+                </div>
+              </div>
+              <img class="card-img" src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/29197237_2213314215347518_1716429778006835200_o.jpg?_nc_cat=104&_nc_sid=174925&_nc_ohc=tLaneMnZWJQAX8Qy26P&_nc_ht=scontent.fcgy1-1.fna&oh=e912a1b58e72c8041ba1cedf34810b5a&oe=5FA6C60E">
+              <div class="card-body px-3">
+                <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                <h6 class="card-subtitle"><img src="https://instagram.fcgy1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/118645869_334939530983307_8286574848532435857_n.jpg?_nc_ht=instagram.fcgy1-1.fna.fbcdn.net&_nc_ohc=n3rPKC8vNN4AX-pRGMH&oh=302d453657d41b3ea8410839e42a954d&oe=5FAC5A6C" class="icon2">Liked by <b>redvelvetdane and <b> 11 others</b></h6>
+                <p class="card-text"><b>iamarchieryan</b> Sutherland Rocks! TB <a href=""></a>&nbsp;<a href=""></a></p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            
+                        <div class="card mx-auto custom-card" id="prova">
+              <div class="row post-header col-12 py-2 px-3">
+                <div class="col-6 float-left ">
+                  <h4><img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6" class="icon">iamarchieryan</h4>
+                </div>
+                <div class="col-6 float-right text-right post-number">
+                  <h4><a href="#">...</a></h4>
+                </div>
+              </div>
+              <img class="card-img" src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/57216672_2831939666818300_6517691289192890368_n.jpg?_nc_cat=101&_nc_sid=730e14&_nc_ohc=a_eWyUrI5ksAX-g8QXh&_nc_ht=scontent.fcgy1-1.fna&oh=cb2f941263bc9bdb7db5733012bc7169&oe=5FA959BF">
+              <div class="card-body px-3">
+                <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                <h6 class="card-subtitle"><img src="https://instagram.fcgy1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/118645869_334939530983307_8286574848532435857_n.jpg?_nc_ht=instagram.fcgy1-1.fna.fbcdn.net&_nc_ohc=n3rPKC8vNN4AX-pRGMH&oh=302d453657d41b3ea8410839e42a954d&oe=5FAC5A6C" class="icon2">Liked by <b>redvelvetdane and <b> 18 others</b></h6>
+                <p class="card-text"><b>iamarchieryan</b> <a href=""></a>TeamTravel | When in Lake Sebu</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            
+                        <div class="card mx-auto custom-card" id="prova">
+              <div class="row post-header col-12 py-2 px-3">
+                <div class="col-6 float-left ">
+                  <h4><img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6" class="icon">iamarchieryan</h4>
+                </div>
+                <div class="col-6 float-right text-right post-number">
+                  <h4><a href="#">...</a></h4>
+                </div>
+              </div>
+              <img class="card-img" src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/29695535_2243627325649540_7065949997928299806_n.jpg?_nc_cat=110&_nc_sid=174925&_nc_ohc=u3fLchOhnCkAX91lOrt&_nc_ht=scontent.fcgy1-1.fna&oh=b2312f9effb711ccba516fbfae3bcffd&oe=5FA6B5BF">
+              <div class="card-body px-3">
+                <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                <h6 class="card-subtitle"><img src="https://instagram.fcgy1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/12912788_1733197366895741_1964914525_a.jpg?_nc_ht=instagram.fcgy1-1.fna.fbcdn.net&_nc_ohc=yBv-0i897EcAX_eRQ2y&oh=8f2b719c34d71b4bd7b5ec394536ac2a&oe=5FAC2407" class="icon2">Liked by <b>marjoangelloja and <b> 17 others</b></h6>
+                <p class="card-text"><b>iamarchieryan</b> Another <a href=""></a> 📸 <a href=""></a>&nbsp;<a href=""></a></p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="menu2" class="container-fluid tab-pane fade"><br>
+        <div class="row ">
+          <div class="col-md-4 col-sm-6 px-1 my-1 ">
+            <img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t31.0-8/18216800_1781039235241687_2287834245708469068_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=MnCI80QxATAAX8tOJkt&_nc_ht=scontent.fcgy1-1.fna&oh=a2b296f1b2c25e078fbe46d3ea199380&oe=5FA7F7B6" width="100%" height="350px">
+          </div>
+          <div class="col-md-4 col-sm-6 px-1 my-1">
+            <img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/13728974_1383454365000178_8380962556661192722_n.jpg?_nc_cat=108&_nc_sid=a9b1d2&_nc_aid=0&_nc_ohc=5VsN9KF-18gAX8snEDR&_nc_ht=scontent.fcgy1-1.fna&oh=99172f34527bf3f52148f293f3b568e8&oe=5FA96BBB" width="100%" height="350px">
+          </div>
+          <div class="col-md-4 col-sm-6 px-1 my-1 ">
+            <img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/103914342_3792111807467743_7532403016987990032_n.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=c-Ypos8tqYYAX_NHng7&_nc_ht=scontent.fcgy1-1.fna&oh=a378ca769124d2dba6fa4822e92c11ec&oe=5FA672A7" alt="Card image cap" width="100%" height="350px">
+          </div>
+          <div class="col-md-4 col-sm-6 px-1 my-1">
+            <img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/29197237_2213314215347518_1716429778006835200_o.jpg?_nc_cat=104&_nc_sid=174925&_nc_ohc=tLaneMnZWJQAX8Qy26P&_nc_ht=scontent.fcgy1-1.fna&oh=e912a1b58e72c8041ba1cedf34810b5a&oe=5FA6C60E" alt="Card image cap" width="100%" height="350px">
+          </div>
+          <div class="col-md-4 col-sm-6 px-1 my-1">
+            <img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/57216672_2831939666818300_6517691289192890368_n.jpg?_nc_cat=101&_nc_sid=730e14&_nc_ohc=a_eWyUrI5ksAX-g8QXh&_nc_ht=scontent.fcgy1-1.fna&oh=cb2f941263bc9bdb7db5733012bc7169&oe=5FA959BF" alt="Card image cap" width="100%" height="350px">
+          </div>
+          <div class="col-md-4 col-sm-6 px-1 my-1">
+            <img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/29695535_2243627325649540_7065949997928299806_n.jpg?_nc_cat=110&_nc_sid=174925&_nc_ohc=u3fLchOhnCkAX91lOrt&_nc_ht=scontent.fcgy1-1.fna&oh=b2312f9effb711ccba516fbfae3bcffd&oe=5FA6B5BF" alt="Card image cap" width="100%" height="350px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
