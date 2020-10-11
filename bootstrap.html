@@ -1,65 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <title>The Rice Mart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+        
 </head>
 <body>
-    <div class="container">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md sticky-top navbar-dark">
+<div class="container-fluid">
+   <img src="https://amoyanatuic.github.io/Amoyan_WebDev_Finals/exam/assests/TRM.PNG">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://amoyanatuic.github.io/Amoyan_WebDev_Midterm/exam/part2b/Amoyan_portfolio.html">Portfolio</a>
+            </li>          
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" href="https://amoyanatuic.github.io/Amoyan_WebDev_Midterm/registration.html">Login</a>
+            </li>
         
-        <h2>Hands On</h2>
-        <nav class="navbar navbar-expand-lg">
-            
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">World</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Politics</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Business</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Science</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sports</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Tech</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Travel</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Health</a>
-                  </li>
-            </div>
-          </nav>
-
-        <div>
-            <img class="rounded" src="http://lorempixel.com/400/200/sports/1" alt="" />
-            <img class="rounded-circle" src="http://lorempixel.com/200/200/sports/2" alt="" />
-            <img class="img-thumbnail" src="http://lorempixel.com/400/200/sports/3" alt="" />
-        </div>
+        </ul>
     </div>
-
+</div>    
+</nav>
     
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="boostrap/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="boostrap/js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+<section class="facemask">
+<div class="facemask-inner">
+    <img src="https://cdn.wallpapersafari.com/8/24/y2kCVN.jpg">
+    <div class="face-caption text-center">
+        <h1 class="display-2">In this trying time,
+    let's help each to survive.</h1>
+        <button type="button" class="btn btn-outline-light btn-lg">Stay at home</button>
+    </div>
+</div>
+</section>
+    
+<section class="gov-priorities">
+    <div class="container-fluid">
+        <h2>Government Priorities</h2>
+      <div class="row">
+            <div class="col-sm">
+                <a class="nav-link" href="index.html">
+                    <img src="https://cdn.discordapp.com/attachments/608852791875600386/719677289469575198/ManaVirus.jpg">
+                    <p>Coronavirus Breakdown</p>
+                </a>
+            </div>
+            <div class="col-sm">
+              <a class="nav-link" href="index.html">
+                  <img src="https://cdn.discordapp.com/attachments/608852791875600386/719677285774655519/Hands.jpg">
+                  <p>Economic Crisis</p>
+              </a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section class="job-bank">
+    <div>
+        <img src="https://wir.skyrock.net/wir/v1/resize/?im=%2Fart%2FSHAR.7396.421.2.jpg&c=mog&w=600&q=90">
+        <div class="job-caption">
+            <h1 class="display-2">Online Rice Store</h1>
+            <p>We have enough products to accumulate your needs in this uncertain time.</p>
+            <button type="button" class="btn btn-outline-light btn-lg">Go to Store</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <ul>
+              <li>
+                  <a class="nav-link" href="https://www.gov.ph/">About the Gov</a>
+              </li>
+              <li>
+                  <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li>
+                  <a class="nav-link" href="https://911.davaocity.gov.ph/">Public Service</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <ul>
+              <li>
+                  <a class="nav-link" href="https://ptvnews.ph/">News</a>
+              </li>
+              <li>
+                  <a class="nav-link" href="https://www.doh.gov.ph/">Health Care</a>
+              </li>
+              <li>
+                  <a class="nav-link" href="https://pcoo.gov.ph/">Reporting to Gov</a>
+              </li>
+          </ul>
+        </div>
+
+        <div class="col-sm">
+          Connect with Us:<br>
+          <a class="socialmedia" href="https://www.facebook.com/archieryan.amoyan/"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19757.png"></a>
+          <a class="socialmedia" href="https://www.instagram.com/aaespine/?hl=en"><img src="https://freepngimg.com/thumb/instagram/25750-4-instagram-transparent.png"></a>
+        </div>
+        <div class="col-sm">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpm7OhxWDYxNviR4O4PApXbCKMWGhsxqlOxg&usqp=CAU">
+        </div>
+      </div>
+</div>
+</footer>    
 </body>
 </html>
