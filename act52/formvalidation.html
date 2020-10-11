@@ -1,134 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=">
-  <title>Registration Form</title>
+  <title>Form Validation</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/javascript" href="js/script.js">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
+
 </head>
 <body>
-  <!--
-  <table border="1">
-    <tr>
-      <td><em>Row1</em> Col1</td>
-      <td>Row1 Col2</td>
-    </tr>
-    <tr>
-      <td>Row2 Col1</td>
-      <td>Row2 Col2</td>
-    </tr>    
-  </table>
-  -->
-  
-      <legend> <h1> The Rice Mart</h1>
-        <legend> <h1>Online Registration Form</h1>
-      <p> The Rice Mart online application form asks the client's basic information<br>
-        such as name, email address, password, gender, birthday, placed order, mode of payment.</br></p> </legend>
-      <table>
-      <form id="myForm" action="">
+
+  <div class='customAlert'>
+    <p class='message'></p>
+    <input type='button' class='confirmButton' value='Close'>
+  </div>
+
+  <div id="container">
+    <form id="myForm">
+      <h1>The Rice Mart<br>Registration Form</h1>
+
+      <table class="table1">
         <tr>
-          <td>Username:</td>
-          <td><input type="text" 
-                     id="userName" 
-                     name="userName"/>
-          </td>
+          <th align="left">Name</th>
+          <th>&nbsp;</th>
+          <th>&nbsp;</th>
+          <th align="right">Mobile #</th>
         </tr>
         <tr>
-          <td>Email Address:</td>
-          <td><input type="email" id="emailAddress" name="emailAddress" /></td>
+          <td><input type="text" placeholder="First Name" minlength="2" maxlength="30" required></td>
+          <td><input type="text" placeholder="Last Name" minlength="2" maxlength="30" required></td>
+          <td>&nbsp;</td>
+          <td align="right"><input type="text" placeholder="E.G., 09181764529" pattern="[0]{1}[9]{1}[0-9]{9}" title="Phone number starting with 09 and remaining 9 digit with 0-9." required></td>
         </tr>
         <tr>
-          <td>Password:</td>
-          <td><input type="password" id="txtPassword" name="txtPassword" /></td>
-        </tr>
-       <tr>
-          <td>Gender:</td>
-          <td>  <input type="radio" id="gender" name="gender" value="Female" selected="selected"/>
-          		<label for="gender">Female</label>
-          		<input type="radio" id="gender" name="gender" value="Male" selected="selected"/>
-          		<label for="gender">Male</label>
-          </td>
+          <th align="left">Username</th>
+          <th align="left">Email Address</th>
+          <th>&nbsp;</th>
+          <th align="right">Birthday</th>
         </tr>
         <tr>
-          <td>Birth Date:</td>
-          <td>  
-          <input type="date" id="birthday" name="birthday">
-          </td>
+          <td><input type="text" id="myInput" class="input_username" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user63829103" pattern="[A-Za-z0-9]{1-100}" title="Special characters are not accepted." required></td>
+          <td><input type="text" id="myInput" required placeholder="Enter email address" minlength="15" maxlength="50" title="Please enter your full email address."></td>
+          <td>&nbsp;</td>
+          <td align="right"><input type="date" id="myInput" id="date" data-date="" data-date-format="DD MMMM YYYY" required></td>
         </tr>
         <tr>
-          <td colspan="2">
-            Choose the best rice: 
-            <select name="drpChoices" id="drpChoices">
-              <option value=""></option>
-              <option value="Tonner">Tonner</option>
-              <option value="Jasmine">Jasmine</option>
-              <option value="Brown Rice">Brown Rice</option>
-              <option value="Dinorado">Dinorado</option>
-              <option value="Sinandomeng">Vocals</option>
-            </select>
-            
-          </td>
-        </tr>
-        
-        <tr>
-          <td colspan="2">
-          Pick Orders:<br>
-            <input type="checkbox" 
-                   id="d1"
-                   name="d1"
-                   value="1kg"/>
-                   
-            <label for="d1">1kg</label>
-            <br>
-            <input type="checkbox" 
-                   id="d2"
-                   name="d2"
-                   value="2kg"/>
-            <label for="d2">2kg</label>
-            <br>
-            <input type="checkbox" 
-                   id="d3"
-                   name="d3"
-                   value="5kg"/>
-            <label for="d3">5kg</label>
-            <br>
-            <input type="checkbox" 
-                   id="d4"
-                   name="d4"
-                   value="10kg"/>
-            <label for="d4">10kg</label>
-            <br>
-            <input type="checkbox" 
-                   id="d5"
-                   name="d5"
-                   value="25kg / Half Sack"/>
-            <label for="d5">25kg / Half Sack</label>
-            <br>
-            <input type="checkbox" 
-                   id="d6"
-                   name="d6"
-                   value="50kg / 1 Sack"/>
-            <label for="d6">50kg /1 Sack</label>
-            <br>
-            <input type="checkbox" 
-                   id="d7"
-                   name="d7"
-                   value="Volume"/>
-            <label for="d7">Volume</label>
-            <label for="appt">
-            <br>
-            Pick up/Delivery time:</label>
-  <input type="time" id="appt" name="appt">
-          </td>
+          <th align="left">Password</th>
+          <th>&nbsp;</th>
+          <th>&nbsp;</th>
+          <th align="right">Gender</th>
         </tr>
         <tr>
-        <td colspan="2">
-        <input type="submit"> <input type="reset">
-        </td>
+          <td><input type="password" id="myInput txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
+          <td><input type="password" id="myInput txtConfirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
+          <td></td>
+          <td align="center"><input type="radio" id="male" name="gender" value="male" checked><label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other"><label for="other">Other</label></td>
         </tr>
-       
-        </form> 
+
       </table>
 
-  
+      <table class="table2">
+        <tr>
+          <th colspan="3">CLASSES</th>
+        </tr>
+        <tr>
+          <td>Choose the best rice</td>
+          <td colspan="2"><select name="drpLoginType" id="drpLoginType" required>
+              <option value="Guest">Toner</option>
+              <option value="Guest">Jasmine</option>
+              <option value="Guest">Brown Rice</option>
+              <option value="Guest">Sinandomeng</option>
+          </td>
+        </tr>
+        <tr>
+          <td>Pick Orders</td>
+          <td><input type="checkbox" id="class" value="1" checked><label for="1kg">1kg</label><br>
+            <input type="checkbox" id="class" value="1" checked><label for="2kg">2kg</label><br>
+            <input type="checkbox" id="class" value="1" checked><label for="5kg">5kg</label><br>
+            <input type="checkbox" id="class" value="1"><label for="10kg">10kg</label>
+          </td>
+          <td>
+            <input type="checkbox" id="class" value="1"><label for="25kg">25kg/Half Sack</label><br>
+            <input type="checkbox" id="class" value="1"><label for="50kg">50kg/1 Sack</label><br>
+            <input type="checkbox" id="class" value="1"><label for="Voulume">Volume</label></td>
+        </tr>
+      </table><br></br>
+
+      <table class="table3">
+        <tr>
+          <td></td>
+          <td><input type="number" id="myInput" required dir="rtl" min="1000" max="30000" placeholder="1000">php</td>
+        </tr>
+        <tr>
+          <td>VAT - 20%</td>
+          <td><input type="number" id="myInput" required dir="rtl" min="1" max="3000" placeholder="100">php</td>
+        </tr>
+      </table></br>
+
+      <div id="total"><button value="submit" id="submitButton" onClick="Alert()">Submit</button>
+      </div>
+      <br></br><br>
+      </br><br></br>      
+    </form>
+  </div>
 </body>
+
 </html>
