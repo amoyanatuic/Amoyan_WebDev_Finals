@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Membership's Registration Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/registration.css" type="text/css">
+  
+  <div class='customAlert'>
+    <p class='message'></p>
+    <input type='button' class='confirmButton' value='Close'>
+  </div>
+
+  <div id="container">
+    <form id="myForm">
+      <h1>The Rice Mart<br>Registration Form</h1>
+
+      <table class="table1">
+        <tr>
+          <th align="left">Name</th>
+          <th>&nbsp;</th>
+          <th>&nbsp;</th>
+          <th align="right">Mobile #</th>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="First Name" minlength="2" maxlength="30" required></td>
+          <td><input type="text" placeholder="Last Name" minlength="2" maxlength="30" required></td>
+          <td>&nbsp;</td>
+          <td align="right"><input type="text" placeholder="Ex. 09104828588" pattern="[0]{1}[9]{1}[0-9]{9}" title="Phone number starting with 09 and remaining 9 digit with 0-9." required></td>
+        </tr>
+        <tr>
+          <th align="left">Username</th>
+          <th align="left">Email Address</th>
+          <th>&nbsp;</th>
+          <th align="right">Birthday</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="myInput" class="input_username" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iamarchieryan" pattern="[A-Za-z0-9]{1-100}" title="Special characters are not accepted." required></td>
+          <td><input type="text" id="myInput" required placeholder="Enter email address" minlength="15" maxlength="50" title="Please enter your full email address."></td>
+          <td>&nbsp;</td>
+          <td align="right"><input type="date" id="myInput" id="date" data-date="" data-date-format="DD MMMM YYYY" required></td>
+        </tr>
+        <tr>
+          <th align="left">Password</th>
+          <th>&nbsp;</th>
+          <th>&nbsp;</th>
+          <th align="right">Gender</th>
+        </tr>
+        <tr>
+          <td><input type="password" id="myInput txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
+          <td><input type="password" id="myInput txtConfirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
+          <td>
+          <td align="center">
+            <input type="radio" id="male" name="gender" value="male" checked><label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+            </td>
+        </tr>
+
+      </table>
+
+      <table class="table2">
+        <tr>
+          <th colspan="3">Orders</th>
+        </tr>
+        <tr>
+          <td>Choose the best rice</td>
+          <td colspan="2"><select name="drpLoginType" id="drpLoginType" required>
+              <option value="Guest">Toner</option>
+              <option value="Guest">Jasmine</option>
+              <option value="Guest">Brown Rice</option>
+              <option value="Guest">Sinandomeng</option>
+          </td>
+        </tr>
+        <tr>
+          <td>Pick Orders</td>
+          <td>
+            <input type="checkbox" id="#" name="1kg" value="Rice">
+            <label for="Oder1"> 1kg</label><br>
+            <input type="checkbox" id="#" name="vehicle2" value="Rice">
+            <label for="Oder2"> 2kg</label><br>
+            <input type="checkbox" id="#" name="vehicle3" value="Rice">
+            <label for="Oder3"> 5kg</label><br><br>
+          </td>
+          <td>
+            <input type="checkbox" id="#" name="1kg" value="#">
+            <label for="Oder4"> 10kg</label><br>
+            <input type="checkbox" id="#" name="vehicle2" value="Rice">
+            <label for="Oder5"> 25kg</label><br>
+            <input type="checkbox" id="#" name="vehicle3" value="Rice">
+            <label for="Oder6"> 50kg</label><br><br>
+        </tr>
+      </table><br></br>
+
+      <table class="table3">
+        <tr>
+          <td></td>
+          <td><input type="number" id="myInput" required dir="rtl" min="1000" max="30000" placeholder="P150.00">php</td>
+        </tr>
+        <tr>
+          <td>VAT - 20%</td>
+          <td><input type="number" id="myInput" required dir="rtl" min="1" max="3000" placeholder="100">php</td>
+        </tr>
+      </table></br>
+
+      <div id="total"><button value="submit" id="submitButton" onClick="Alert()">Submit</button>
+      </div>
+      <br></br><br>
+      </br><br></br>      
+    </form>
+  </div>
+</body>
+</html>
