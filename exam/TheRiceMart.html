@@ -4,7 +4,7 @@
     <title>The Rice Mart</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/TheRiceMart.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -31,12 +31,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="https://amoyanatuic.github.io/Amoyan_WebDev_Midterm/exam/part2b/Amoyan_portfolio.html">Portfolio</a>
             </li>          
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item">              
+                <a class="nav-link" data-toggle="dropdown" href="#">Contact Us</a>                  
             </li>
-                <li class="nav-item">
-                <a class="nav-link" href="https://amoyanatuic.github.io/Amoyan_WebDev_Finals/act52/formvalidation.html">Login</a>
-            </li>        
+            <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Login             
+                 <div class="dropdown-menu" align="right">              
+                 <a class="dropdown-item" href="https://amoyanatuic.github.io/Amoyan_WebDev_Final/exam/admin.html">Admin Login</a>
+                 <a class="dropdown-item" href="memlogin.html">Membership Registration Page</a>
+                 <a class="dropdown-item" href="https://amoyanatuic.github.io/Amoyan_WebDev_Final/exam/admin.html">Members Page</a>
+                 <a class="dropdown-item" href="memlogin.html">Logout</a>                   
+              </button>
+              </div>
         </ul>
     </div>
 </div>    
@@ -46,9 +52,7 @@
 <div class="facemask-inner">
     <img src="https://cdn.wallpapersafari.com/8/24/y2kCVN.jpg">
     <div class="face-caption text-center">
-        <h1 class="display-2">In this trying time,
-    let's help each to survive.</h1>
-        <button type="button" class="btn btn-outline-light btn-lg">Stay at home</button>
+        <h1 class="display-2">In this trying time, let's help each to survive.</h1>        
     </div>
 </div>
 </section>
@@ -58,7 +62,7 @@
         <h2>Government Priorities</h2>
       <div class="row">
             <div class="col-sm">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="#">
                     <img src="https://cdn.discordapp.com/attachments/608852791875600386/719677289469575198/ManaVirus.jpg">
                     <p>Coronavirus Breakdown</p>
                 </a>
