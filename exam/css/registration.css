@@ -1,0 +1,342 @@
+body {
+  font-family: "Arial";
+  background-color: Green;
+}
+
+h1 {
+  color: White;
+  padding: 70px;
+  text-transform: sentencecase;
+  text-align: center;
+  font-weight: 500;
+  font-size: 45px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 0em;
+}
+
+h3 {
+  color: whitw;
+  font-size: 26px;
+}
+
+b {
+  color: red;
+}
+
+.table1 {
+  width: 100%;
+  padding: 30px 100px 0px 100px;
+}
+
+.table1 th {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.table1 td {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.table2 {
+  width: 80%;
+  color: #fff;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.table2 th {
+  padding: 15px;
+  border-top: 4px solid gray;
+  border-bottom: 4px solid gray;
+}
+
+.table2 td {
+  color: #555;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.table3 {
+  color: #333;
+  margin-right: 35px;
+  margin-left: auto;
+  padding: 15px 45px 15px 0px;
+  width: 30%;
+}
+
+.table4 {
+  float: right;
+  width: 70%;
+  padding: 10px;
+  text-align: right;
+  position: relative;
+}
+
+.table4 tr,
+td {
+  padding-bottom: 10px;
+}
+
+.error {
+  background: #ff0000;
+}
+
+.error:focus {
+  background: none;
+}
+
+.input_username {
+  background-image: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-at-512.png);
+  background-position: 7px 7px;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+label{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+select{
+  padding: 10px;
+  width: 100%;
+}
+
+input {
+  background: none;
+}
+
+input[type="radio"]{
+  margin-left: 10px;
+}
+
+input[type="text"],
+input[type="date"], input[type="password"] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid ;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  margin: 3px;
+  width: 95%;
+  height: 30px;
+  transition: 1s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  transition: 1s;
+  border-bottom: 1px gray;
+}
+
+.input_username:focus, input[type="text"]:focus {
+  outline: none;
+  transition: 1s;
+  border-bottom: 1px solid #fdfd96;
+  background: none;
+}
+
+input[type="text"]::placeholder {
+  color: #555;
+  transition: 1s;
+}
+
+input[type="date"] {
+  font-family: "Arial";
+  transition: 1s;
+  text-transform: sentencecase;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  transition: 1s;
+  border-bottom: 1px solid #fdfd96;
+}
+
+input[type="date"]::placeholder {
+  color: #999;
+  transition: 1s;
+}
+
+input[type="number"] {
+  text-align: center;
+  margin: 0px;
+  font-size: 16px;
+  color: #333;
+  transition: 1s;
+  outline: none;
+  border: none;
+}
+
+input[type="number"]::placeholder {
+  color: #555;
+  transition: 1s;
+}
+
+input:invalid(::no-placeholder) {
+  background: red;
+}
+
+button {
+  color: #000;
+  background: gray;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  width: 100%;
+  padding: 30px;
+}
+
+button:hover {
+  background-color: #c1c1c1;
+}
+
+button #add {
+  margin-left: 100px;
+}
+
+#container {
+  width: 70%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #999;
+  background-color: gray;
+}
+
+#total {
+  width: 20%;
+  text-align: right;
+  margin-right: 90px;
+  margin-left: auto;
+}
+
+#footer {
+  position: relative;
+  bottom: 0px;
+  padding: 10px;
+  margin: 80px;
+  border-top: 2px solid #fdfd96;
+}
+
+#rate {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 0em;
+  padding: 10px;
+  color: #333;
+  width: 115px;
+}
+
+#label {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Arial";
+  border: none;
+  padding: 0px 10px 0px 10px;
+  transition: 1s;
+}
+
+#label::placeholder {
+  color: #555;
+  transition: 1s;
+}
+
+#label:focus,
+#label:hover {
+  color: #333;
+  background: #ddd;
+  transition: 1s;
+}
+
+/* for the pop up message */
+
+.message {
+  padding: 5px;
+  color: #000;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.confirmButton {
+  margin: auto;
+  text-align: center;
+}
+
+.customAlert {
+  display: none;
+  position: fixed;
+  max-width: 25%;
+  min-width: 250px !important;
+  min-height: 20%;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #999;
+  box-sizing: border-box;
+  margin-left: -12.5%;
+  margin-top: -5.2%;
+  background: #fdfd96;
+
+  @media all and (max-width: 1300px) {
+  }
+
+  input[type="button"] {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 36px;
+    margin-top: -45px;
+    margin-left: -25%;
+    outline: 0;
+    border: 0;
+    background: #04b486;
+    color: white;
+    &:hover {
+      transition: 0.3s;
+      cursor: pointer;
+      background: lighten(#04b486, 5%);
+    }
+  }
+}
+
+.rab {
+  width: 200px;
+  height: 30px;
+  outline: 0;
+  border: 0;
+  color: white;
+  background: darken(#04b486, 5%);
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
