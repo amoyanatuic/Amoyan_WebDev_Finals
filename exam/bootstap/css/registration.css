@@ -1,0 +1,108 @@
+body {
+  font-family: "Arial";
+  background-color: Green;
+}
+
+h1 {
+  color: White;
+  padding: 70px;
+  text-transform: sentencecase;
+  text-align: center;
+  font-weight: 500;
+  font-size: 45px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 0em;
+}
+
+h3 {
+  color: whitw;
+  font-size: 26px;
+}
+
+b {
+  color: red;
+}
+
+.table1 {
+  width: 100%;
+  padding: 30px 100px 0px 100px;
+}
+
+.table1 th {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.table1 td {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.table2 {
+  width: 80%;
+  color: #fff;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.table2 th {
+  padding: 15px;
+  border-top: 4px solid gray;
+  border-bottom: 4px solid gray;
+}
+
+.table2 td {
+  color: #555;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.table3 {
+  color: #333;
+  margin-right: 35px;
+  margin-left: auto;
+  padding: 15px 45px 15px 0px;
+  width: 30%;
+}
+
+.table4 {
+  float: right;
+  width: 70%;
+  padding: 10px;
+  text-align: right;
+  position: relative;
+}
+
+.table4 tr,
+td {
+  padding-bottom: 10px;
+}
+
+.error {
+  background: #ff0000;
+}
+
+.error:focus {
+  background: none;
+}
+
+.input_username {
+  background-image: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-at-512.png);
+  background-position: 7px 7px;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+label{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
