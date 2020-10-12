@@ -1,4 +1,6 @@
-/* STRUCTURE */
+body{
+  align: center;
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -22,7 +24,7 @@
   text-align: center;
 }
 #formFooter {
-  background-color: #f6f6f6;
+  background-color: #0a6b2f;
   border-top: 1px solid #dce8f1;
   padding: 25px;
   text-align: center;
@@ -30,13 +32,8 @@
   border-radius: 0 0 10px 10px;
 }
 
-
-/* TABS */
-
-
-/* FORM TYPOGRAPHY*/
 input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #56baed;
+  background-color: #1c801b;
   border: none;
   color: white;
   padding: 15px 80px;
