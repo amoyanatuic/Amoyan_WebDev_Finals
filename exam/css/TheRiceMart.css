@@ -1,168 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Ubuntu|Roboto:400,700);
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  color: #222;
-}
-
-.navbar{
-    padding: .8rem;    
-    background-color: gray;
-}
-
+.back-img {
+    background-image: url('https://cdn.wallpapersafari.com/8/24/y2kCVN.jpg');
+       background-size: 100%;
+       height: 400px;
+   }
+   .nav-link {
+   margin-left: 10px;
+   }
 .navbar-brand{
-    height: 3rem;
-    font-family: 'Tahoma', sans-serif;
-    font-size: 20rem;
+  font-family: "Tahoma", cursive;
+  font-weight: 700;
+  font-size: 2em;
+}
+body{
+  font-family: "Ubuntu", sans-serif;
 }
 
-.navbar-nav li{
-    padding-right:1.1rem;
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+.navbar li{
+  text-transform: capitalize;
+}
+#contact{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
 }
 
-.nav-link{
-    font-size: 1.1rem;
-    font-weight:500;
-    color: aliceblue;
-}
+  #contact h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
 
-/*
-.nav-link:hover,
-.nav-link.active {
-    border-bottom: .1rem solid #0056b3;
-}
-*/
+  #contact h2{
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
 
-.nav-link:hover,
-.nav-link.active {
-    transition: 0.3s;
-}
-
-.facemask img{
-    width:100%;
-    height:100%;
-}
-
-.face-caption{
-    position:absolute;
-    transform: translateY(-50%);
-    top: 47%;
-    padding:20%;
-}
-
-.face-caption h1{
-    font-size: 50px;
-    font-weight: bolder;
-    color: white;
-}
-
-
-.gov-priorities .nav-link:hover,
-.nav-link{
-    border-bottom: none;
-}
-
-.gov-priorities h2{
-    padding-top:1%;
-    padding-left:0.5%;
-}
-
-.gov-priorities img{
-    width:100%;
-}
-
-.gov-priorities p{
-    position:absolute;
-    bottom:1%;
-    padding-left:2%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-    text-shadow: 2px 2p white;
-}
-
-.job-bank img{
-    width: 100%;
-}
-
-.job-caption{
-    position:absolute;
-    transform: translateY(-50%);
-    padding-left:2%;
-    padding-bottom: 15%;
-    color: white;
-}
-
-.job-caption h1{
-    font-size: 3rem;
+  #contact address{
+    font-size: 1.5em;
+    color: #fff;
     font-weight: bold;
-}
+  }
 
-footer{
-    background-color: #3f3f3f;
-    color: #d5d5d5;
-    padding-top: 2.5rem;
-    padding-bottom: 2rem;
-}
+  #contact .fa-stack{
+    color: #333;
+  }
 
-footer ul{
-    list-style: none;
-}
+  #contact .fa-stack:hover .fa-stack-1x{
+    color: #333;
+    transition: 0.5s;
+  }
 
-.socialmedia img{
-    width: 20%;
-    margin:7%;
-}
+  #contact .fa-stack:hover .fa-stack-2x{
+    color: #fff;
+    transition: 0.5s;
+  }
 
-/*---Media Queries ---*/
-@media (max-width: 991px){
+  #contact a{
+    text-decoration: none;
+  }
 
-.face-caption{
-    position:relative;
-    top:45%;
-    padding:20%;
-}
-
-.face-caption {
-    font-size: 30px;
-    font-weight: bolder;
-    color: White;
-}
-    
-.navbar-toggler, .navbar-toggler-icon{
-    z-index: 1;
-}
-
-.gov-priorities img{
-    width:100%;
-}    
-
-.gov-priorities h2{
-    padding-top:2%;
-}
-
-.job-caption{
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.job-bank img{
-    height: 190%;
-}
-
-.job-caption{
-    position:absolute;
-    padding-left:2%;
-    padding-bottom: 15%;
-}
-
-}
-
-@media (max-width: 575px){
-    
-}
-
-@media (max-width: 767px){
-    
-}
