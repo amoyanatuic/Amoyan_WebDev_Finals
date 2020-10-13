@@ -17,7 +17,8 @@ The motivation is to create a web application so that the third-class farmers ca
     https://drive.google.com/file/d/1dMwN0zHy4ZfCjAVxkJj1Oj6ZtyrMdTef/view?usp=sharing <br>
     https://drive.google.com/file/d/1aq-NMHN8qlTUvfbUor20FFRIhshVmRRx/view?usp=sharing <br>
 
-    Video Pitch: https://drive.google.com/drive/folders/1cCQ1_Uimui1WUk4MSx5zyK1FA66ky7kS?usp=sharing <br>
+    Video Pitch: <br>
+    https://drive.google.com/drive/folders/1cCQ1_Uimui1WUk4MSx5zyK1FA66ky7kS?usp=sharing <br>
     
 4.	What are the web tools you used to create your web app? <br>
 The tools that I have been used to create my web application are Microsoft Visual Studio, Github, Codepen.io and Sublime <br>
