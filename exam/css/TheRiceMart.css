@@ -13,7 +13,7 @@ body{
 }
 .navbar-brand{
   font-family: "Tahoma", cursive;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2em;
 }
 a.anchor {
@@ -28,9 +28,9 @@ a.anchor {
 #slider-wrapper {
   width: 940px;
   height: 470px;
-  margin: 10px auto;
+  margin: 70px auto;
   position: relative;
-  margin-bottom: 0px;  
+  margin-bottom: 70px;  
   overflow: hidden;
 }
 
@@ -97,7 +97,7 @@ a.anchor {
   width: 940px;
   height: 470px;
   position: absolute;
-  top: 0;
+  top: 50;
   left: 0;
   margin-bottom: 0px;
   overflow: hidden;
@@ -143,7 +143,7 @@ a.anchor {
   width: 400%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 20;
   left: 0;
   overflow-y: hidden;
   z-index: 1;
@@ -261,7 +261,7 @@ a.anchor {
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:green;
 }
 .copyright-text
 {
@@ -271,7 +271,7 @@ a.anchor {
 {
   .site-footer [class^=col-]
   {
-    margin-bottom:30px
+    margin-bottom:10px
   }
 }
 @media (max-width:767px)
@@ -349,7 +349,7 @@ a.anchor {
 }
 @media (max-width:767px)
 {
-  .social-icons li.title
+.social-icons li.title
   {
     display:block;
     margin-right:0;
