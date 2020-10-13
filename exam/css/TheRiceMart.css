@@ -28,9 +28,9 @@ a.anchor {
 #slider-wrapper {
   width: 940px;
   height: 470px;
-  margin: 70px auto;
+  margin: 50px auto;
   position: relative;
-  margin-bottom: 70px;  
+  margin-bottom: 50px;  
   overflow: hidden;
 }
 
@@ -157,42 +157,8 @@ a.anchor {
   width: 25%;
   float: left;
 }
-#contact h1{
-    font-size: 5em;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                 0px 8px 13px rgba(0,0,0,0.5),
-                 0px 18px 23px rgba(0,0,0,0.1);
-  }
 
-  #contact h2{
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                 0px 8px 13px rgba(0,0,0,0.5),
-                 0px 18px 23px rgba(0,0,0,0.1);
-  }
-
-  #contact address{
-    font-size: 1.5em;
-    color: #fff;
-    font-weight: bold;
-  }
-
-  #contact .fa-stack{
-    color: #333;
-  }
-
-  #contact .fa-stack:hover .fa-stack-1x{
-    color: #333;
-    transition: 0.5s;
-  }
-
-  #contact .fa-stack:hover .fa-stack-2x{
-    color: #fff;
-    transition: 0.5s;
-  }
-
-  #contact a{
-    text-decoration: none;
-  }
+/*--footer---*/
 .site-footer
 {
   background-color:#26272b;
