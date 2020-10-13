@@ -5,30 +5,41 @@
     	<meta charset="utf-8">   	
     	<link rel="stylesheet" href="css/admin.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
- 
- </head>
- <body>
+  </head>
 
-	 <div class="wrapper fadeInDown">
-  <div id="formContent">
-
-    <div class="fadeIn first">
-    <p><strong>Administrator Login</strong></p>
+  <Body>
+  <div class="form-modal">
+    
+    <div class="form-toggle">
+        <button id="login-toggle" onclick="toggleLogin()">Admin Login</button>
+        <button id="signup-toggle" onclick="toggleSignup()">Sign Up</button>
     </div>
-   
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Admin ID">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
 
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
-	  </div>
-		 </div>
-	 </div>
- </body>
+    <div id="login-form">
+        <form>
+          <input type="password" placeholder="Enter Admin ID" reqired>            
+          <input type="password" placeholder="Enter password" required>
+          <button type="button" class="btn login">login</button>
+          <p><a href="javascript:void(0)">Forgot your Password</a></p>
+          
+            <hr/>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> Sign in with Google</button>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> Sign in with Facebook</button>
+        </form>
+    </div>
+
+    <div id="signup-form">
+        <form>
+            <input type="email" placeholder="Enter your email"/>
+            <input type="text" placeholder="Choose username"/>
+            <input type="password" placeholder="Create password"/>
+            <button type="button" class="btn signup">create account</button>
+            <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+            <hr/>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> Sign up with Google</button>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> Sign up with Facebook</button>
+        </form>
+    </div>
+</div>
+    </body>
 </html>
