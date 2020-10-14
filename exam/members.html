@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<h2>The Rice Mart Team</h2>
+<p>The person behind this website.</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.0-9/15492087_1549368691742077_4390927548449128507_n.jpg?_nc_cat=107&_nc_sid=174925&_nc_ohc=kwAFY_Z7nnYAX9P_MZI&_nc_ht=scontent-hkg4-1.xx&oh=e505af26bd70e4f4a15e110b08c3f152&oe=5FAC6788" alt="Ryan" style="width:100%">
+      <div class="container">
+        <h2>Archie Ryan Amoyan</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Wed Developer</p>
+        <p></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvCibYwqUu8UVjFCKDtsxEeGQNtXqgPIwzSw&usqp=CAU" alt="Juan" style="width:100%">
+      <div class="container">
+        <h2>Juan dela Cruz</h2>
+        <p class="title">Art Director</p><br>
+        <p></p>
+        <p></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTctQA8X5Mve1MItqHdy8pY49wbgO0Bjqp84w&usqp=CAU" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Juan Tamad</h2>
+        <p class="title">Designer</p><br>
+        <p></p>
+        <p></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
